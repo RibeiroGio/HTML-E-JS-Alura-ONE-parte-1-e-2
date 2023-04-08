@@ -1,0 +1,112 @@
+<meta charset=UTF="8"> 
+	  <h1>Seja bem-vindo, este código é apenas um teste para praticar meus conhecimentos</h1>
+	
+	
+	<!-- document.write("18!"); ISTO É PARA DECORAR, É PARA QUANDO VOCE QUER USAR "HTML" NO MUNDO JAVASCRIPT -->
+	<!-- document.write("A idade da gio é <br> 18"); -- isso é mundo HTML dentro de JS,
+	logo ele reconhece que o comando de puler linha é o <br> -->
+	<!-- Math.round(media)); <!-- arredondar um número--> 
+	
+<script> 
+	var idadeFlavio = 39;
+	var idadeGio = 20;
+	var idadeJoaquim = 41;
+
+	var media = ( idadeFlavio + idadeGio + idadeJoaquim)/3;
+	document.write("<br> A média das idades é " + Math.round(media));
+	var nome = "Flávio";
+	document.write("<br> A idade de " + nome + " é " + idadeFlavio );
+	
+ </script> 
+<hr>
+<!-- Seu carro tem um tanque de 40 litros e pode utilizar álcool ou gasolina. 
+Com gasolina e usando todo o tanque você percorre um caminho com gasolina de 480 quilômetros. Qual é o consumo de gasolina`? 
+Com álcool, um tanque de 40 litros fez um caminho com Álcool de 300 quilômetros. Qual é o consumo de Álcool? -->
+
+ <h3>Álcool ou Gasolina?</h3> 
+
+ <script>  
+	var gasolina = 480;  
+	var alcool = 300; 
+	var carro = 40;  
+
+	document.write("<br> O consumo do alcool é " + (alcool/carro) + " Km/L"); 
+	document.write("<br> O consumo da gasolina é " + (gasolina/carro) + " Km/L");
+
+ </script> 
+ <hr>
+ <!-- FUNÇÃO (sem parâmetro) - FUNCTION -->
+  <script> 
+ 
+ function pular(){
+ 
+	document.write ("<br><br>");
+ }
+ 
+	var ano = 2023
+	pular();
+	document.write("Gio tem " + (ano - 2005) + " anos");
+	pular();
+	document.write("Ana tem " + (ano - 2006) + " anos <br>");
+
+</script>
+ <hr>
+  <!-- usando a função no lugar de document.write, essa função é com parametro -->
+  <!-- uma função pode ter a chamada de outra funçao, e ela pode ter ou nao ter paramentro,  -->
+  <!-- depende muito do que o seu codigo quer fazer  -->
+ <script>
+
+ function pular(){
+ 
+	document.write ("<p></p>");
+ }
+
+ function mostra(frase) {
+ document.write(frase)
+ pular();
+ }
+	pular();
+	var ano = 2023
+	mostra("Gio tem " + (ano - 2005) + " anos");
+	mostra("Ana tem " + (ano - 2006) + " anos");
+	
+</script>
+<hr>
+ <!-- praticando função -->
+<script>
+	function pular(){
+	document.write("<br>");
+	}
+	
+	 function mostra(frase){
+	 document.write(frase);
+	 pular();
+	 }
+	var carlos = 18;
+	var ana = 15;
+	
+	pular();
+	mostra("nossa diferença de idade é " + (carlos - ana) + " anos")
+</script>
+
+
+	
+ <!---praticando atividades-->
+<script>
+  function pulaLinha() {
+    document.write("<br>");
+  }
+
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+  var idadeMediaQuandoTemFilhos = 28;
+  var anoAtual = 2016;
+  var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+  mostra(Math.round(quantidadeDeGeracoes));
+</script>
+<hr>
+
+
+
