@@ -1,0 +1,170 @@
+<<meta charset="UTF=8"> 
+<!-- imc peso/altura * altura, o mesmo codigo de maneiras diferentes, para analisar a melhor maneira de manter o codigo limpo  -->
+<script>
+  function pulaLinha() {
+    document.write("<br><br>");
+  }
+
+  function mostra(frase) {
+
+	document.write(frase);
+    pulaLinha();
+
+  }
+  function calculaImc(peso, altura)  {
+	var imc = peso / (altura * altura);
+	mostra("O imc calculado é " + imc);
+  }
+
+   calculaImc(73, 1.71);
+   calculaImc(68, 1.72);
+   
+   
+  </script>
+  <hr>
+ ----------------------
+  <script>
+  function pulaLinha() {
+    document.write("<br><br>");
+  }
+
+  function mostra(frase) {
+
+	document.write(frase);
+    pulaLinha();
+
+  }
+  function calculaImc(alt1, peso1, alt2, peso2)  {
+	var imc1 = peso1 / (alt1 * alt1);
+	var imc2 = peso2 / (alt2 * alt2);
+	var imcTotal = imc1 + imc2;
+	mostra("O IMC do primeiro peso é: " + imc1);
+	mostra("O IMC do segundo peso é: " + imc2);
+	mostra("E a soma dos IMC's é: "  + imcTotal);
+
+
+  }
+
+	calculaImc( 1,71, 73, 1,72, 68);
+   
+   
+  </script>
+  <hr>
+   ----------------------
+
+  <script>
+  function pulaLinha() {
+    document.write("<br><br>");
+  }
+
+  function mostra(frase) {
+
+	document.write(frase);
+    pulaLinha();
+
+  }
+  function calculaImc(altura, peso) {
+	var imc = peso / (altura*altura);
+	return imc;
+	
+	}
+	
+	var imcFlavio = calculaImc(1.71, 73);
+	var imcAmigo = calculaImc(1.72, 68);
+	
+	mostra(imcFlavio);
+	mostra(imcAmigo);
+	
+  
+   </script>
+   <hr>
+   ----------------------
+     <script>
+  function pulaLinha() {
+    document.write("<br><br>");
+  }
+
+  function mostra(frase) {
+
+	document.write(frase);
+    pulaLinha();
+
+  }
+  function calculaImc(altura, peso) {
+	return peso / (altura*altura);
+	
+	}
+	
+	var totalImc = calculaImc(1.71, 73)  + calculaImc(1.72, 68);
+	
+	mostra("A soma dos IMC's é: " + totalImc);
+
+   </script>
+   <hr>
+   
+
+   ----------------------
+     <script>
+  function pulaLinha() {
+    document.write("<br><br>");
+  }
+
+  function mostra(frase) {
+
+	document.write(frase);
+    pulaLinha();
+
+  }
+  function calculaImc(altura, peso) {
+	return peso / (altura*altura);
+	
+	}
+	var alturaInformada = 1.71;
+	var pesoInformado = 73;
+	
+	var imc = calculaImc(alturaInformada, pesoInformado);
+	
+	mostra("O IMC calculado é: " +imc);
+   </script>
+   <hr>
+   ----------------------
+<script> 
+//agora fazer um programa para calcular os dados do IMC dos dados inseridos 
+//pelo usuario no prompt de comando do navegador.
+//prompt é JS, recebe como parametro a pergunta do usuario, recebe o retorno
+
+   
+  function pulaLinha() {
+    document.write("<br><br>");
+  }
+
+  function mostra(frase) {
+
+	document.write(frase);
+    pulaLinha();
+
+  }
+  function calculaImc(altura, peso) {
+	return peso / (altura*altura);
+	
+	}
+	var nome = prompt("Informe o seu nome: ");
+	var alturaInformada = prompt(nome + ", Informe sua altura:");
+	var pesoInformado = prompt(nome + ", Informe seu peso:");
+	
+	var imc = calculaImc(alturaInformada, pesoInformado);
+	
+	mostra(nome + ", o seu IMC é: " + imc);
+  
+   if(imc < 18.5) {
+		mostra("Você está abaixo da média, isso é perigoso!");
+   }
+   if(imc > 35) {
+		mostra("Você está acima da média, isso é perigoso!");
+   }
+   if(imc >= 18.5 && imc <=35) {
+   
+			mostra("Você está na média, isso é muito bom!");
+	
+   }
+</script>
