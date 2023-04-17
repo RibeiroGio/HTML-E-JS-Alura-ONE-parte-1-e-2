@@ -1,0 +1,26 @@
+<meta charset="UTF=8">
+  
+ <script>
+	function pulaLinha() {
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+	
+	//while(multiplicador <= 10) {
+	/* for é uma estrutura de repetição tambem, for cria um loop que consiste em três expressões opcionais, dentro de parênteses e separadas por 
+	ponto e vírgula, seguidas por uma declaração ou uma sequência de declarações executadas em sequência.
+	Para incremetar algo de um em um em nosso sloops, é so usar o atalho ++ ex: "multiplicador++;" isto é pós-incremento */
+	
+	for(var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador++) {
+	
+		mostra( 7 * multiplicador);
+	}
+	
+	mostra("FIM");
+</script>

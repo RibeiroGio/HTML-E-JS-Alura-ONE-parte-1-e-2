@@ -1,0 +1,62 @@
+<meta charset="UTF=8">
+  
+ <script>
+	function pulaLinha() {
+		document.write("<br><br>");
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+
+	}
+	var totalFamilia = parseInt(prompt("Quantidade de familiares: "));
+	var numero = 1;
+	var totalIdades = 0;
+	
+	while( numero <= totalFamilia) {
+
+	var idade = parseInt(prompt("Informe idade do familiar: "));
+	totalIdades = totalIdades + idade;
+	numero++;
+	}	
+	
+	var mediaIdade = totalIdades/totalFamilia;
+	mostra("A média das idades dos seus familiares é: " + mediaIdade);
+	mostra("FIM");
+</script>
+
+<script>
+/* atividade: 
+Karol é organizadora de eventos. Em alguns meses ela é capaz de organizar três eventos e em outros ela organiza cinco. 
+Ou seja, a quantidade de eventos organizados por Karol por mês é variável.
+A organizadora de eventos pediu ao seu irmão Kauan, estudante de Ciência da Computação, que criasse um programa no qual ela pode informar o total
+ gasto nos eventos e disso obter uma média das despesas. Essa média ajudará a prever os gastos futuros nos próximos meses.
+ RESULTADO:*/
+  
+  var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+
+    var contador = 1;
+
+    var totalGastoComEventos = 0;
+
+    while(contador <= totalDeEventos) {
+
+        var gasto = parseFloat(prompt("Informe total gasto com evento"));
+
+        totalGastoComEventos = totalGastoComEventos + gasto;
+
+        contador++;
+    }
+
+    var media = totalGastoComEventos / totalDeEventos;
+
+    mostra("A média de gastos é " + media);
+ 
+ 
+ 
+ 
+ 
+</script>
+
